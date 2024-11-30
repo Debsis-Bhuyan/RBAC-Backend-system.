@@ -63,13 +63,13 @@ public class AuthController {
         if (userRepository.existsByUsername(registerRequest.getUsername())) {
             return ResponseEntity.badRequest().body("Error: Username is already taken!");
         }
-
+        System.out.println(registerRequest);
 
         // Create new user's account
         User user = new User();
         user.setUsername(registerRequest.getUsername());
         user.setPassword(passwordEncoder.encode(registerRequest.getPassword()));
-
+        System.out.println(user);
 //        User user = new User();
 //        user
 

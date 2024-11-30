@@ -23,7 +23,7 @@ public class JwtService {
     private final Key key;
 
     public JwtService() {
-        this.key = Keys.secretKeyFor(SignatureAlgorithm.HS256); // Secure key generation
+        this.key = Keys.secretKeyFor(SignatureAlgorithm.HS512); // Secure key generation for HS512
     }
 
     /**
@@ -41,7 +41,7 @@ public class JwtService {
                 .setSubject(username)
                 .setIssuedAt(new Date())
                 .setExpiration(new Date(System.currentTimeMillis() + jwtExpirationInMillis))
-                .signWith(key, SignatureAlgorithm.HS256)
+                .signWith(key, SignatureAlgorithm.HS512)
                 .compact();
     }
 
