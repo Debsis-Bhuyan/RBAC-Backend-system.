@@ -33,7 +33,6 @@ public class CustomUserDetailsService implements UserDetailsService {
         );
     }
 
-
     private Collection<? extends GrantedAuthority> getAuthorities(User user) {
         Set<GrantedAuthority> authorities = new HashSet<>();
         for (Role role : user.getRoles()) {

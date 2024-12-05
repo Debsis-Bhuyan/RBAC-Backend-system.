@@ -13,7 +13,6 @@ import java.util.List;
 @Setter
 public class JwtResponse {
     private String token;
-//    private String type = "Bearer"; // The token type (e.g., Bearer token)
     private String username;
     private List<String> roles;
 }
