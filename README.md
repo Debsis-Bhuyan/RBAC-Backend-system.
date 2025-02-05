@@ -25,8 +25,8 @@ SecureRBAC is a Spring Boot application demonstrating the implementation of Auth
 1. **Clone the Repository**:
 
 ```bash
-git clone https://github.com/your-repo/SecureRBAC.git
-cd SecureRBAC
+https://github.com/Debsis-Bhuyan/RBAC-Backend-system..git
+cd RBAC-Backend-system
 ```
 
 
